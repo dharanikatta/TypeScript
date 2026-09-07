@@ -21,7 +21,7 @@ app.get("/user/:name", (req, res) => {
 });
 
 // Multiple route parameters
-// Example: /student/101/Shamitha
+// Example: /student/101/dharani
 app.get("/student/:id/:name", (req, res) => {
     const id = req.params.id;
     const name = req.params.name;
@@ -30,7 +30,7 @@ app.get("/student/:id/:name", (req, res) => {
 });
 
 // 4. Query parameters
-// Example: /search?name=Shamitha&course=Express
+// Example: /search?name=dharani&course=Express
 app.get("/search", (req, res) => {
     const name = req.query.name;
     const course = req.query.course;
